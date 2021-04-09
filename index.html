@@ -21,7 +21,7 @@
 <body>
   <nav class="navbar">
     <ul>
-      <li class ="navbar-logo image" style="padding-left: 0;"><img title="IMG Logo"src="images/imglogo.png" alt="img-logo" width="50px" height="auto"></li>
+      <li class ="navbar-logo image" style="padding-left: 0;"><img class="js" title="IMG Logo"src="images/imglogo.png" alt="img-logo" width="50px" height="auto"></li>
       <li class="navbar-toggle ham"><a href="blog.html"><i class="fa fa-bars"></i></a></li>
       <li class="navbar-links"><a href="blog.html">BLOG</a></li>
       <li class="navbar-links"><a href="#">PROJECTS</a></li>
@@ -138,10 +138,14 @@ $(document).ready(function(){
 	  if (scroll > 1) {
 	    $(".navbar").css("background" , "white");
       $(".navbar").addClass("active");
+      document.getElementsByClassName("js")[0].src = "images/imglogo1.png";
+      document.getElementsByClassName("fa-bars")[0].style.color = "black";
 	  }
     if(scroll<=1){
       $(".navbar").css("background" , "none");
       $(".navbar").removeClass("active");
+      document.getElementsByClassName("js")[0].src = "images/imglogo.png";
+      document.getElementsByClassName("fa-bars")[0].style.color = "#f8d16c";
     }
   })
 })

@@ -248,6 +248,12 @@
 .active{
   box-shadow: 0 0 10px rgba(0,0,0,0.4); 
 }
+.fa-bars{
+  color: #f8d16c;
+}
+/* .burger{
+  color: #f8d16c;
+} */
 @media (max-width: 695px){
   .navbar-links{
     display: none;

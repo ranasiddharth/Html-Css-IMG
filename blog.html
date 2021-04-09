@@ -25,8 +25,8 @@
   <div class="whole" id="1st">
     <nav class="navbar">
       <ul>
-        <li class ="navbar-logo image" style="padding-left: 0;"><img title="IMG Logo"src="images/imglogo.png" alt="img-logo" width="50px" height="auto"></li>
-        <li class="navbar-toggle ham"><a href="blog.html"><i class="fa fa-bars"></i></a></li>
+        <li class ="navbar-logo image" style="padding-left: 0;"><a href="index.html"><img title="IMG Logo"src="images/imglogo1.png" alt="img-logo" width="50px" height="auto"></a></li>
+        <li class="navbar-toggle ham"><a href="index.html"><i class="fa fa-bars"></i></a></li>
         <li class="navbar-links blogg"><a href="blog.html">BLOG</a></li>
         <li class="navbar-links"><a href="#">PROJECTS</a></li>
         <li class="navbar-links"><a href="#">TEAM</a></li>
@@ -152,10 +152,10 @@
   <div class="M">
     <a href="#"><img src="images/M.png" alt="M" width="25px" height="25px"></a>
   </div>
-  <!-- <footer id="foot">&copy 2021 Information Management Group</footer> -->
-  <div class="last">
+  <footer id="foot"><div>&copy 2021 Information Management Group</div></footer>
+  <!-- <div class="last">
     <p>&copy 2021 Information Management Group</p>
-  </div>
+  </div> -->
 
   <script>
 
@@ -165,13 +165,18 @@
         if (scroll > 1) {
           $(".navbar").css("background", "white");
           $(".navbar").addClass("active");
+          // document.getElementsByClassName("js")[0].src = "images/imglogo1.png";
         }
         if (scroll <= 1) {
           $(".navbar").css("background", "none");
           $(".navbar").removeClass("active");
+          // document.getElementsByClassName("js")[0].src = "images/imglogo.png";
         }
       })
     })
+
+
+
   </script>
 </body>
 
