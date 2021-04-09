@@ -10,11 +10,10 @@
 }
 .navbar{
   position: fixed;
-  top: 0;
+  /* top: 0; */
   z-index: 2;
   /* background-color: white; */
   width: 100%;
-  /* margin-bottom: 10px; */
 }
 .navbar ul{
   display: flex;
@@ -22,9 +21,9 @@
   align-items: center;
   /* background-color: gold; */
 }
-.blog{
-  text-decoration: underline;
-
+.blogg{
+  padding-bottom: 0.88rem;
+    border-bottom: 2px solid black;
 }
 .navbar li{
   list-style-type: none;
@@ -32,13 +31,14 @@
 }
 .navbar li:hover a{
   color: grey;
+  cursor: pointer;
 }
 .navbar ul a{
+  color: #263146;
   text-decoration: none;
-  color: black;
   /* font-weight: 600; */
-  font-family: 'TypoPRO-BebasNeue';
-  font-size: 1.1rem;
+  font-family: 'TypoPRO Bebas Neue';
+  font-size: 1.4rem;
 }
 .navbar-logo{
   flex: 1;
@@ -51,6 +51,7 @@
 }
 .image{
   margin-left: 5%;
+  padding-left: 0;
 }
 .container{
   display: flex;
@@ -189,13 +190,23 @@ header{
   text-align: center;
   margin-bottom: 1em;
 }
-#foot{
+/* #foot{
   width: 100%;
   color: white;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 3.65em;
   background-color: #263146;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-family: 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 15px;
+} */
+.last{
+  color: white;
+  padding: 10px;
+  background-color: #263146;
+  padding-left: 0;
+  font-family: 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+.last p{
+  margin-left: 5%;
 }
